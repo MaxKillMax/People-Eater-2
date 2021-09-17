@@ -6,7 +6,7 @@ public class People : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<PlayerHealth>().PlayerDestroy(gameObject);
+            collision.gameObject.GetComponent<PlayerHealth>().PlayerDestroy(gameObject, true);
         }
     }
 }

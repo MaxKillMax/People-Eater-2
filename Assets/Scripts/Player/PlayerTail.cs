@@ -27,11 +27,11 @@ public class PlayerTail : MonoBehaviour
 
             if (tailsList.Count != 1)
             {
-                tailsList[tailsList.Count - 1].GetComponent<Tail>().GetInformation(tailsList[tailsList.Count - 2].transform, 0.9f);
+                tailsList[tailsList.Count - 1].GetComponent<Tail>().GetInformation(tailsList[tailsList.Count - 2].transform, 0.7f);
             }
             else
             {
-                tailsList[tailsList.Count - 1].GetComponent<Tail>().GetInformation(transform, 1.4f);
+                tailsList[tailsList.Count - 1].GetComponent<Tail>().GetInformation(transform, 1.2f);
             }
         }
     }

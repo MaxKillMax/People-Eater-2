@@ -6,7 +6,7 @@ public class PlayerDetector : MonoBehaviour
     [SerializeField] private PlayerTail playerTail;
     [SerializeField] private PlayerHealth playerHealth;
 
-    private Vector3[] vectorArray = new Vector3[9];
+    private Vector3[] vectorArray = new Vector3[11];
 
     private void Start()
     {
@@ -14,11 +14,13 @@ public class PlayerDetector : MonoBehaviour
         vectorArray[1] = new Vector3(vectorArray[0].x - 0.45f, vectorArray[0].y, vectorArray[0].z);
         vectorArray[2] = new Vector3(vectorArray[0].x - 0.90f, vectorArray[0].y, vectorArray[0].z);
         vectorArray[3] = new Vector3(vectorArray[0].x - 1.35f, vectorArray[0].y, vectorArray[0].z);
-        vectorArray[4] = new Vector3(vectorArray[0].x - 1.80f, vectorArray[0].y, vectorArray[0].z - 0.5f);
-        vectorArray[5] = new Vector3(vectorArray[0].x + 0.45f, vectorArray[0].y, vectorArray[0].z);
-        vectorArray[6] = new Vector3(vectorArray[0].x + 0.90f, vectorArray[0].y, vectorArray[0].z);
-        vectorArray[7] = new Vector3(vectorArray[0].x + 1.35f, vectorArray[0].y, vectorArray[0].z);
-        vectorArray[8] = new Vector3(vectorArray[0].x + 1.80f, vectorArray[0].y, vectorArray[0].z - 0.5f);
+        vectorArray[4] = new Vector3(vectorArray[0].x - 1.80f, vectorArray[0].y, vectorArray[0].z);
+        vectorArray[5] = new Vector3(vectorArray[0].x - 1.80f, vectorArray[0].y, vectorArray[0].z - 0.5f);
+        vectorArray[6] = new Vector3(vectorArray[0].x + 0.45f, vectorArray[0].y, vectorArray[0].z);
+        vectorArray[7] = new Vector3(vectorArray[0].x + 0.90f, vectorArray[0].y, vectorArray[0].z);
+        vectorArray[8] = new Vector3(vectorArray[0].x + 1.35f, vectorArray[0].y, vectorArray[0].z);
+        vectorArray[9] = new Vector3(vectorArray[0].x + 1.80f, vectorArray[0].y, vectorArray[0].z);
+        vectorArray[10] = new Vector3(vectorArray[0].x + 1.80f, vectorArray[0].y, vectorArray[0].z - 0.5f);
     }
 
     private void Update()
